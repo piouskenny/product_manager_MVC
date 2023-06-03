@@ -1,0 +1,20 @@
+{
+    "name": "micheal/product_web-app",
+    "autoload": {
+        "psr-4": {
+            "Micheal\\ProductWebApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "piouskenny",
+            "email": "kehindeu13@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "./app"
+        }
+    }
+}
