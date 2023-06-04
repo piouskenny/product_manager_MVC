@@ -1,0 +1,1 @@
+<h1>INDEX PAGE OF PRODUCT</h1>

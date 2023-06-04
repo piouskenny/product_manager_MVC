@@ -31,9 +31,15 @@ class Router
         }
 
         if ($fn) {
-            call_user_func($fn);
+            call_user_func($fn, $this);
         } else {
             echo "404 ERROR PAGE NOT FOUND";
         }
+    }
+
+
+    public function renderView($view)
+    {
+        include_once __DIR__ . "/views/$view.php";
     }
 }
