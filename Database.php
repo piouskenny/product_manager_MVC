@@ -14,13 +14,17 @@ class Database
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
-    public function getProducts()
+    public function getProducts($search = "")
     {
-        $search = $_GET['search'] ?? '';
 
         if ($search) {
-            $statement = $this->pdo->prepare('SELECT * FROM products WHERE  title LIKE :title ORDER BY id  ');
+            $statement = $this->pdo->prepare('SELECT * FROM products WHERE  title LIKE :title ORDER BY create_date  ');
             $statement->bindValue(':title', "%$search%");
+        } else {
+            $statement = $this->pdo->prepare('SELECT * FROM products  ORDER BY create_date  DESC');
         }
+
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 }
