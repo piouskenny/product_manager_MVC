@@ -1,5 +1,6 @@
 {
     "name": "micheal/product_web-app",
+
     "authors": [
         {
             "name": "piouskenny",
@@ -9,7 +10,8 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "app\\": "./"
+            "app\\": "./",
+            "controllers\\": "./controllers"
         }
     }
 }

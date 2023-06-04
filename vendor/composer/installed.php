@@ -3,7 +3,7 @@
         'name' => 'micheal/product_web-app',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '0e2f7037706031ea9e7a5e71cdc1478d6ca03e5c',
+        'reference' => '522a32601fefa88fcdc2ad7db0eea773ac293196',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'micheal/product_web-app' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '0e2f7037706031ea9e7a5e71cdc1478d6ca03e5c',
+            'reference' => '522a32601fefa88fcdc2ad7db0eea773ac293196',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

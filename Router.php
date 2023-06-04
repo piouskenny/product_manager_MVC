@@ -25,11 +25,15 @@ class Router
         $method = $_SERVER['REQUEST_METHOD'];
 
         if ($method === 'GET') {
-            $fn  = $this->getRoutes[$currentUrl];
+            $fn  = $this->getRoutes[$currentUrl] ?? null;
         } else {
-            $fn  = $this->postRoutes[$currentUrl];
+            $fn  = $this->postRoutes[$currentUrl] ?? null;
         }
 
-        print_r($fn);
+        if ($fn) {
+            call_user_func($fn);
+        } else {
+            echo "404 ERROR PAGE NOT FOUND";
+        }
     }
 }
